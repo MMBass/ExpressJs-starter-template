@@ -2,7 +2,7 @@
   "name": "expressjs-starter-template",
   "version": "1.0.0",
   "description": "ExpressJs Starter template for backend nodeJS developres",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
