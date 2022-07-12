@@ -1,8 +1,8 @@
 const { MongoClient } = require('mongodb');
 const dev_config = (process.env.store === undefined) ? require('../config/devConfig') : undefined;
 const dev_db_Url = (dev_config) ? dev_config.dev_db_Url : undefined;
-const client = new MongoClient(process.env.dbUrl || dev_db_Url);
-const collection = client.db("Posdar").collection("users");
+const client = new MongoClient(/*DBUrl*/); // todo replace names
+const collection = client.db(/*db_name*/).collection(/*users*/); // todo replace names
 
 async function readOne(userName = {}) {
     await client.connect();
@@ -10,6 +10,5 @@ async function readOne(userName = {}) {
     client.close();
     return user;
 };
-readOne("Bass.sites.dev@gmail$$$.com")
 
 module.exports = { readOne };

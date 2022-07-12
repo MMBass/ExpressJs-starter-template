@@ -1,8 +1,8 @@
 const { MongoClient, ObjectId } = require('mongodb');
 const dev_config = (process.env.store === undefined) ? require('../config/devConfig') : undefined;
 
-const client = new MongoClient('DBUrl'); // todo replace names
-const collection = client.db("DBname").collection("CollectionName"); // todo replace names
+const client = new MongoClient(/*DBUrl*/); // todo replace names
+const collection = client.db(/*DBname*/).collection(/*CollectionName*/); // todo replace names
 
 async function readAll() {
     await client.connect();
