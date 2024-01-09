@@ -1,9 +1,9 @@
 # About 
 ExpressJs Starter template for backend nodeJS developres
-includes JWT, Helmet, 
+includes JWT, Helmet, mongodb
 
 # Set up 
-Run npm i
+Just run `npm i`
 
 Create env variable named 'store' in your server hosting, for environment check
 
